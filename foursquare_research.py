@@ -44,6 +44,3 @@ df = pd.DataFrame(dict_for_df)
     
 print(df) 
 
-print(data)
-
-
