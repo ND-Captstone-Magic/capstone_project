@@ -25,13 +25,9 @@ longitude_list = []
 categories_list = []
 
 for i in data['response']['venues']:
-    
     venue_name_list.append(i['name'])
-    # print('Venue Name: ' + i['name'])
-    
     latitude_list.append(i['location']['lat'])
     longitude_list.append(i['location']['lng'])
-    # print('Coordinate: ' + str(i['location']['lat']) +', '+ str(i['location']['lng']))
     
     for k in i['categories']:
         categories_list.append(k['name'])
