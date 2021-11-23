@@ -10,11 +10,12 @@ CLIENT_ID='UGPV5HR24VYYNI5PYM1Q3JE0ABDYOOZ454F4H3J24JCE4FGO'
 CLIENT_SECRET='ONGSEUBMYX5KJ3NXYE4DN0MDSW5S2LGYBZA3X3EWXVS3DFZB'
 GEO='37.444572,-122.160309'
 CATEGORY=''
-DATE='20211117' #YYYYMMDD
+DATE='20211123' #YYYYMMDD
 
-search_url= f'https://api.foursquare.com/v2/venues/search?client_id={CLIENT_ID}&client_secret={CLIENT_SECRET}&ll={GEO}&query={CATEGORY}&v={DATE}'
+search_url= f'https://api.foursquare.com/v2/venues/search?client_id={CLIENT_ID}&client_secret={CLIENT_SECRET}&ll={GEO}&radius=100000&query={CATEGORY}&v={DATE}'
+search_url2= f'https://api.foursquare.com/v2/venues/search?client_id={CLIENT_ID}&client_secret={CLIENT_SECRET}&ll={GEO}&query={CATEGORY}&radius=10&v={DATE}'
 
-resp = requests.get(url=search_url)
+resp = requests.get(url=search_url2)
 
 data = resp.json()
 
