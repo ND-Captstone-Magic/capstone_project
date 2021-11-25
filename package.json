@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "kepler.gl": "^2.5.5"
+    "kepler.gl": "^2.5.5",
+    "matplotlib": "^1.0.0"
   }
 }
